@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name</title>
+    
+    <!-- Apple-style Typography -->
+    <link rel="stylesheet" href="https://use.typekit.net/[your-kit-code].css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Minimal Tab Navigation -->
+    <nav class="tab-nav">
+        <div class="tab-container">
+            <button class="tab-button active" data-tab="about">About</button>
+            <button class="tab-button" data-tab="research">Research</button>
+            <button class="tab-button" data-tab="projects">Projects</button>
+            <button class="tab-button" data-tab="contact">Contact</button>
+            <div class="tab-indicator"></div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Central Content -->
+        <div class="central-content">
+            <div id="manifold-container"></div>
+            <div class="text-overlay">
+                <h1>ABDUL RAFAY</h1>
+                <p class="subtitle">Data Scientist</p>
+            </div>
+        </div>
+
+        <!-- Tab Content -->
+        <div class="tab-content-container">
+            <div class="tab-content active" id="about-content">
+                <h2>About</h2>
+                <p>I'm a undergraduate student at Boston University, 
+                    interested in data science, mathematics, and machine learning. 
+                    I have worked on several projects</p>
+            </div>
+
+            <div class="tab-content" id="research-content">
+                <h2>Research</h2>
+                <p>Your research interests and publications...</p>
+            </div>
+
+            <div class="tab-content" id="projects-content">
+                <h2>Projects</h2>
+                <p>SOBI NA (Swedish Global Pharmaceutical Specialized in Rare Diseases) 			    Waltham, MA
+                    Summer Intern 										   	     May-Aug 2024
+                    Developed ML-driven financial analysis models to support FP&A decisions
+                    Traveling & Expenses Forecasting Model. A deep learning forecasting model for T&E budgeting based on historical data.  Python, Multiple Linear Regression, Neural Networks, Excel, and Data  Visualization libs. Presented the results to C-suite executives.
+                    Comparative Company Analysis using Large Language Models (LLMs). Automated data collection and benchmarking of Net Revenue, SG&A, and FTE counts, revealing an 18% deficit relative to peer companies. Findings presented to C-suite executives. Python, LLMs, Financial Data APIs, SEC EDGAR, 10-K Analysis. 
+                    </p>
+                <br>
+                <p>MASSMUTUAL								     			      Boston, MA
+                    Data Science Mentee										             Mar 2024
+                    Participated in BU SPARK! Labs x MassMutual Data Days for Good.
+                    NLP/NER-Named Entity Recognition for Large Textual Data Analysis. Developed a dataset using decades of Boston Globe articles, leveraging LLMs and geocoding techniques to analyze media coverage in relation to US Census demographic data. Skills: Python, NLP, NER, LLMs, Geocode APIs
+                    </p>
+            </div>
+
+            <div class="tab-content" id="contact-content">
+                <h2>Contact</h2>
+                <div class="contact-links">
+                    <a href="mailto:your@email.com">Email</a>
+                    <a href="https://www.linkedin.com/in/abdul--rafay/">LinkedIn</a>
+                    <a href="https://medium.com/@rafayabdul">Medium</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="manifold.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
