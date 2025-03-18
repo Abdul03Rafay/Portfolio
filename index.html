@@ -3,16 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdul Rafay</title>
+    <title>Abdul Rafay - Data Scientist</title>
     
-    <!-- Apple-style Typography -->
-    <link rel="stylesheet" href="https://use.typekit.net/[your-kit-code].css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Abdul Rafay's portfolio website - Data Scientist specializing in ML, NLP, and financial modeling.">
+    <meta name="author" content="Abdul Rafay">
+    <link rel="icon" href="favicon.ico">
+
+    <!-- External CSS -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Three.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR-GA-ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'YOUR-GA-ID');
+    </script>
 </head>
 <body>
-    <!-- Minimal Tab Navigation -->
-    <nav class="tab-nav">
+    <!-- Navigation -->
+    <nav class="tab-nav" role="navigation" aria-label="Main navigation">
         <div class="tab-container">
             <button class="tab-button active" data-tab="about">About</button>
             <button class="tab-button" data-tab="research">Research</button>
@@ -35,64 +50,74 @@
 
         <!-- Tab Content -->
         <div class="tab-content-container">
-            <!-- About -->
-            <div class="tab-content active" id="about-content">
+            <!-- About Section -->
+            <section class="tab-content active" id="about-content">
                 <h2>About</h2>
-                <p>I'm an undergraduate student at Boston University pursuing a Bachelor of Science in Data Science with a Minor in Computer Science, anticipated graduation in May 2026. My interests lie in data science, machine learning, and mathematics, with experience spanning financial modeling, NLP, and predictive analytics.</p>
-            </div>
+                <p>
+                    I’m an undergraduate student at Boston University majoring in Data Science, minoring in Computer Science. 
+                    Passionate about leveraging data-driven solutions to solve real-world problems in finance, healthcare, and technology. 
+                    Proficient in machine learning, natural language processing, and data visualization. 
+                    Tri-lingual in English, Korean, and Urdu, with experience in mentoring and financial analysis. 
+                    Currently mentoring at BU’s Faculty of Computing & Data Sciences and working as an Investment Associate at BU Finance Club.
+                </p>
+            </section>
 
-            <!-- Research -->
-            <div class="tab-content" id="research-content">
+            <!-- Research Section -->
+            <section class="tab-content" id="research-content">
                 <h2>Research</h2>
                 <ul>
-                    <li><strong>COVID-19 Risk Factor Analysis & ETL Pipeline Development (Jan - May 2024)</strong><br>
-                    Developed an ETL pipeline using Azure Data Factory to process 2TB+ of COVID-19 data, identifying key risk factors across five demographic groups. Utilized SQL and Power BI for visualization.</li>
-
-                    <li><strong>Topic and Semantic Network Analysis on AI Policies in Higher Education (Oct - Dec 2023)</strong><br>
-                    Conducted NLP-driven topic modeling and semantic analysis on AI policies across U.S. universities, optimizing model performance with perplexity and coherence scores.</li>
+                    <li>
+                        <strong>COVID-19 Risk Factor Analysis & ETL Pipeline Development</strong><br>
+                        Developed a scalable ETL pipeline using Azure Data Factory to process over 2TB of COVID-19 data. Analyzed demographic-based risk factors, integrated SQL data transformations, and visualized insights with Power BI.
+                    </li>
+                    <li>
+                        <strong>Topic & Semantic Network Analysis on AI Policies</strong><br>
+                        Performed topic modeling and semantic network analysis on U.S. university AI policies using NLP techniques. Optimized models based on perplexity and coherence metrics (Python, Gensim).
+                    </li>
                 </ul>
-            </div>
+            </section>
 
-            <!-- Projects -->
-            <div class="tab-content" id="projects-content">
-                <h2>Projects & Experience</h2>
+            <!-- Projects Section -->
+            <section class="tab-content" id="projects-content">
+                <h2>Projects</h2>
                 <ul>
-                    <li><strong>SOBI NA (Summer Intern, May-Aug 2024, Waltham, MA)</strong><br>
-                        - Developed ML-driven financial analysis models supporting FP&A decisions.<br>
-                        - Built a deep learning T&E forecasting model using Python, Neural Networks, and Excel; presented to C-suite executives.<br>
-                        - Automated comparative company analysis using LLMs, revealing an 18% SG&A deficit relative to peers.
+                    <li>
+                        <strong>SOBI NA - Financial ML Models</strong><br>
+                        Developed T&E deep learning forecast models and automated comparative company analysis using Python, LLMs, Financial APIs, and presented findings to executives.
                     </li>
-
-                    <li><strong>MassMutual (Data Science Mentee, Mar 2024, Boston, MA)</strong><br>
-                        - Participated in BU SPARK! Labs x MassMutual Data Days for Good.<br>
-                        - Built an NLP/NER model analyzing decades of Boston Globe articles with geocoding techniques.
+                    <li>
+                        <strong>MassMutual - NLP/NER on Media Data</strong><br>
+                        Built datasets from Boston Globe archives, applied NER and geocoding to analyze media bias against US Census data (Python, APIs, NLP).
                     </li>
-
-                    <li><strong>Graphical Search Analysis of Energy Consumption (Nov - Dec 2023)</strong><br>
-                        - Modeled energy trends using Rust, k-means clustering, and ARIMA.</li>
-
-                    <li><strong>Statistical Analysis of BU Student Gym Attendance (Oct - Dec 2023)</strong><br>
-                        - Conducted hypothesis testing correlating dorm location to gym attendance using Python, T-test, JMP Pro.</li>
-
-                    <li><strong>Heart Disease Predictive Modelling (Apr - May 2023)</strong><br>
-                        - Applied Decision Trees and SVM to predict heart disease based on patient attributes.
+                    <li>
+                        <strong>Graphical Energy Consumption Trends Analysis</strong><br>
+                        Applied Rust, k-means clustering, and ARIMA models to visualize and analyze building energy patterns.
+                    </li>
+                    <li>
+                        <strong>Heart Disease Predictive Modeling</strong><br>
+                        Implemented Decision Trees and SVM models to predict patient heart disease risks.
                     </li>
                 </ul>
-            </div>
+            </section>
 
-            <!-- Contact -->
-            <div class="tab-content" id="contact-content">
+            <!-- Contact Section -->
+            <section class="tab-content" id="contact-content">
                 <h2>Contact</h2>
                 <div class="contact-links">
                     <a href="mailto:your@email.com">Email</a>
                     <a href="https://www.linkedin.com/in/abdul--rafay/">LinkedIn</a>
                     <a href="https://medium.com/@rafayabdul">Medium</a>
                 </div>
-            </div>
+            </section>
         </div>
     </main>
 
-    <script src="manifold.js"></script>
-    <script src="app.js"></script>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; © 2025 Abdul Rafay | Powered by Three.js & TypeKit</p>
+    </footer>
+
+    <!-- External Scripts -->
+    <script src="scripts.js" defer></script>
 </body>
 </html>
