@@ -7,8 +7,6 @@
     
     <!-- Apple-style Typography -->
     <link rel="stylesheet" href="https://use.typekit.net/[your-kit-code].css">
-    <link rel="icon" href="favicon.ico">
-    <meta name="description" content="Abdul Rafay">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -22,7 +20,6 @@
             <button class="tab-button" data-tab="contact">Contact</button>
             <div class="tab-indicator"></div>
         </div>
-        <button id="theme-toggle">Toggle Dark Mode</button>
     </nav>
 
     <!-- Main Content -->
@@ -33,7 +30,6 @@
             <div class="text-overlay">
                 <h1>ABDUL RAFAY</h1>
                 <p class="subtitle">Data Scientist</p>
-                <a href="/resume.pdf" class="resume-button" download>Download Résumé</a>
             </div>
         </div>
 
@@ -96,32 +92,12 @@
         </div>
     </main>
 
-    <!-- Back to Top Button -->
-    <button id="back-to-top">↑</button>
-
     <!-- Footer -->
     <footer>
         <p>&copy; 2025 Abdul Rafay | Powered by Three.js & TypeKit</p>
     </footer>
 
     <script src="manifold.js"></script>
-    
-    <script>
-        //Dark Mode Toggle
-        const toggleButton = document.getElementById('dark-mode-toggle');
-        toggleButton.addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-        });
-
-        // Back to Top
-        const backToTop = document.getElementById('back-to-top');
-        window.addEventListener('scroll', () => {
-            backToTop.style.display = window.scrollY > 300 ? 'block' : 'none';
-        });
-        backToTop.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-    </script>
     <script src="app.js"></script>
 </body>
 </html>
