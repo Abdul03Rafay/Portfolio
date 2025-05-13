@@ -22,10 +22,8 @@
             <button class="tab-button" data-tab="contact">Contact</button>
             <div class="tab-indicator"></div>
         </div>
+        <button id="theme-toggle">Toggle Dark Mode</button>
     </nav>
-
-    <!-- Theme Toggle -->
-    <button id="theme-toggle">Toggle Dark Mode</button>
 
     <!-- Main Content -->
     <main>
@@ -35,6 +33,7 @@
             <div class="text-overlay">
                 <h1>ABDUL RAFAY</h1>
                 <p class="subtitle">Data Scientist</p>
+                <a href="/resume.pdf" class="resume-button" download>Download Résumé</a>
             </div>
         </div>
 
@@ -44,7 +43,6 @@
             <div class="tab-content active" id="about-content">
                 <h2>About</h2>
                 <p>I'm an undergraduate student at Boston University pursuing a Bachelor of Science in Data Science with a Minor in Computer Science, anticipated graduation in May 2026. My interests lie in data science, machine learning, and mathematics, with experience spanning financial modeling, NLP, and predictive analytics.</p>
-                <a href="/resume.pdf" class="btn">Download Résumé</a>
             </div>
 
             <!-- Research -->
@@ -107,10 +105,10 @@
     </footer>
 
     <script src="manifold.js"></script>
-    <script src="app.js"></script>
+    
     <script>
         //Dark Mode Toggle
-        const toggleButton = document.getElementById('theme-toggle');
+        const toggleButton = document.getElementById('dark-mode-toggle');
         toggleButton.addEventListener('click', () => {
             document.body.classList.toggle('dark-mode');
         });
@@ -124,5 +122,6 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     </script>
+    <script src="app.js"></script>
 </body>
 </html>
